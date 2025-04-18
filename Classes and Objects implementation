@@ -1,0 +1,34 @@
+# Java-OPPs
+All concepts of Java OOPs
+// 1. Implement the Classes and Objects in Java.
+
+class Dog {
+    String breed;
+    String name;
+    int age;
+
+    void bark() {
+        System.out.println("Woof! Woof!");
+    }
+    void displayInfo() {
+        System.out.println("Breed: " + breed);
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.breed = "Golden Retriever";
+        myDog.name = "Buddy";
+        myDog.age = 3;
+
+        Dog anotherDog = new Dog();
+        anotherDog.breed = "Pug";
+        anotherDog.name = "Lucy";
+        anotherDog.age = 5;
+        myDog.bark();
+        myDog.displayInfo();
+        anotherDog.bark();
+        anotherDog.displayInfo();
+    }
+}
